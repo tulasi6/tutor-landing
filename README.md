@@ -25,27 +25,13 @@ A modern, interactive landing page featuring a unique 3D book page-turning anima
 - **Rotation**: 90-degree Y-axis rotation for page flip
 - **Translation**: -100% or +100% horizontal moveme
 
-speak-tutor/
-├── public/
-├── src/
-│   ├── components/
-│   │   └── SpeakTutorLanding.jsx  # Main component
-│   ├── App.jsx                     # App entry point
-│   ├── index.css                   # Tailwind directives
-│   └── main.jsx                    # React entry point
-├── tailwind.config.js              # Tailwind configuration
-├── postcss.config.js               # PostCSS configuration
-├── vite.config.js                  # Vite configuration
-└── package.json                    # Dependencies
-```
-
 ### Build the project
-```bash
+bash
 npm run build
 
 
 ### Preview production build
-```bash
+bash
 npm run preview
 
 
