@@ -17,13 +17,13 @@ A modern, interactive landing page featuring a unique 3D book page-turning anima
 1. **Page Management**: Array-based page system with dynamic content rendering
 2. **Event Handling**: Multiple input methods (mouse, keyboard, touch)
 3. **Animation Control**: Transition state management prevents overlapping animations
-4. **Accessibility**: Keyboard navigation and ARIA labels
+4. **Accessibility**: Keyboard navigation.
 
 **Key Features**:
 - **Perspective**: Creates 3D space (1000px depth)
 - **Transform Origin**: Right edge for previous, left for next
 - **Rotation**: 90-degree Y-axis rotation for page flip
-- **Translation**: -100% or +100% horizontal moveme
+- **Translation**: -100% or +100% horizontal movement
 
 ### Build the project
 bash
