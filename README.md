@@ -8,7 +8,7 @@ A modern, interactive landing page featuring a unique 3D book page-turning anima
 - **Vite** - Fast build tool and dev server
 - **CSS 3D Transforms** - For page-turning animations
 - **Intersection Observer API** - For scroll-based animations
-- **`handlePageChange(direction)`** - Manages page transitions with debouncing
+- **handlePageChange(direction)** - Manages page transitions with debouncing
 - **useEffect hooks** - Set up event listeners for scroll, keyboard, and touch
 - **Dynamic styling** - Calculates 3D transforms based on page position
 
