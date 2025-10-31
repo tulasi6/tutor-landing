@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, User, Users, MapPin, Heart, List, Bot, Contact, Image, Waves, Signal, User2 } from 'lucide-react'; // ✅ Added Bot here
+import { MessageCircle, User, Users, MapPin, Heart, List, Bot, Contact, Image, Waves, Signal, User2, Wifi, Battery } from 'lucide-react'; // ✅ Added Bot here
 
 const SpeakTutorLanding = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -9,7 +9,7 @@ const SpeakTutorLanding = () => {
   const lastScrollTime = useRef(Date.now());
 
   const pages = [
-    // ✅ Page 1
+    // Page 01 //
     {
       id: 'stay-motivated',
       content: (
@@ -24,7 +24,7 @@ const SpeakTutorLanding = () => {
           </div>
           <div className="relative pb-5">
             <div className="bg-gray-50 rounded-3xl p-8 shadow-xl">
-              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mb-5">
                 <Bot className="w-5 h-5 text-blue-900" /> 
               </div>
               <div className="grid grid-cols-2 gap-4 mb-6">
@@ -50,7 +50,7 @@ const SpeakTutorLanding = () => {
       )
     },
 
-    // ✅ Page 2
+    // Page 02 //
     {
       id: 'talk-anything',
       content: (
@@ -102,7 +102,7 @@ const SpeakTutorLanding = () => {
       )
     },
 
-    // ✅ Page 3
+    // Page 03 //
     {
       id: 'build-relationship',
       content: (
@@ -117,8 +117,11 @@ const SpeakTutorLanding = () => {
           </div>
           <div className="relative">
             <div className="bg-gray-100 rounded-3xl p-6 shadow-2xl">
-              <h1 className="text-left text-gray-900 ml-5 mb-1">9:41</h1>
-              <Signal className="w-5 h-5 text-gray-900 absolute top-4 right-4" />
+              <h1 className="text-left text-gray-900 ml-5 mb-3">9:41</h1>
+              <Signal className="w-5 h-5 text-gray-900 absolute top-4 right-16 mb-3"/>
+              <Wifi className="w-5 h-5 text-gray-900 absolute top-4 right-9 mb-3"/>
+              <Battery className="w-5 h-5 text-gray-900 absolute top-4 right-3 mb-3"/>
+
 
 
 
@@ -158,7 +161,7 @@ const SpeakTutorLanding = () => {
             </div>
             <span className="text-sm text-gray-600">Jessica Park</span>
           </div>
-          <h1 className="text-2xl md:text-6xl lg:text-7xl font-semibold text-[#1e3a8a]">
+          <h1 className="text-2xl md:text-6xl lg:text-7xl font-semibold text-black-100">
             "The first time I used Speak Tutor, I couldn't believe it wasn't a real person. It feels like it understands my motivation deeply."
           </h1>
         </div>
@@ -296,12 +299,9 @@ const SpeakTutorLanding = () => {
       {/* Footer */}
       {currentPage === pages.length - 1 && (
         <div className="fixed bottom-0 left-0 right-0 py-8 px-4 bg-gradient-to-t from-gray-50 to-transparent">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <MessageCircle className="w-8 h-8 text-blue-600" />
-              <span className="text-2xl font-semibold text-gray-900">Speak Tutor</span>
-            </div>
-            <p className="text-gray-600">Your personal language learning companion</p>
+          <div className="max-w-6xl mx-auto text-center mt-8">
+            
+            
           </div>
         </div>
       )}
